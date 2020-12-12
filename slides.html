@@ -13202,7 +13202,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="R-&#31243;&#24335;&#35373;&#35336;">R &#31243;&#24335;&#35373;&#35336;<a class="anchor-link" href="#R-&#31243;&#24335;&#35373;&#35336;">&#182;</a></h1><blockquote><p>條件判斷</p>
+<h1 id="R-&#31243;&#24335;&#35373;&#35336;">R &#31243;&#24335;&#35373;&#35336;<a class="anchor-link" href="#R-&#31243;&#24335;&#35373;&#35336;">&#182;</a></h1><blockquote><p>資料結構</p>
 </blockquote>
 <p>郭耀仁 <a href="mailto:yaojenkuo@datainpoint.com">yaojenkuo@datainpoint.com</a> 來自<a href="https://www.datainpoint.com/">數據交點</a></p>
 
@@ -13212,8 +13212,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.</p>
-<p>Fizz-Buzz Test</p>
+<blockquote><p>R’s base data structures can be organized by their dimensionality and whether they’re homogeneous or heterogeneous.</p>
+<p>Hadley Wickham</p>
 </blockquote>
 
 </div>
@@ -13222,37 +13222,72 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="if-&#26781;&#20214;&#21028;&#26039;"><code>if</code> &#26781;&#20214;&#21028;&#26039;<a class="anchor-link" href="#if-&#26781;&#20214;&#21028;&#26039;">&#182;</a></h2>
+<h1 id="list"><code>list</code><a class="anchor-link" href="#list">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="if-&#20570;&#21934;&#19968;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;"><code>if</code> &#20570;&#21934;&#19968;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;<a class="anchor-link" href="#if-&#20570;&#21934;&#19968;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;">&#182;</a></h2><ul>
-<li><code>if</code> 保留字</li>
-<li><code>EXPR</code> 是一段能產生邏輯值向量的敘述</li>
+<h2 id="list-&#22312;-R-&#20013;&#30340;&#23450;&#20301;"><code>list</code> &#22312; R &#20013;&#30340;&#23450;&#20301;<a class="anchor-link" href="#list-&#22312;-R-&#20013;&#30340;&#23450;&#20301;">&#182;</a></h2><ul>
+<li>用來儲存不同類型的向量</li>
+<li>未命名的 <code>list</code>（unnamed list）與 Python 的 <code>list</code> 呼應</li>
+<li>命名的 <code>list</code>（named list）用來儲存 <code>KEY-VALUE</code> 組合的資料，與 Python 的 <code>dict</code> 呼應</li>
+<li>支援 <code>$</code> 作為索引</li>
 </ul>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="c1"># single branch</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">EXPR</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1"># do something when EXPR is evaluated as TRUE</span>
-<span class="p">}</span>
-</pre></div>
-
-</div>
-</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22914;&#26524;&#19968;&#20491;&#25972;&#25976;&#38500;&#20197;-2-&#30340;&#39192;&#25976;&#28858;-1-&#23601;&#26159;&#22855;&#25976;&#65292;&#21542;&#21063;&#26159;&#20598;&#25976;">&#22914;&#26524;&#19968;&#20491;&#25972;&#25976;&#38500;&#20197; 2 &#30340;&#39192;&#25976;&#28858; 1 &#23601;&#26159;&#22855;&#25976;&#65292;&#21542;&#21063;&#26159;&#20598;&#25976;<a class="anchor-link" href="#&#22914;&#26524;&#19968;&#20491;&#25972;&#25976;&#38500;&#20197;-2-&#30340;&#39192;&#25976;&#28858;-1-&#23601;&#26159;&#22855;&#25976;&#65292;&#21542;&#21063;&#26159;&#20598;&#25976;">&#182;</a></h2>
+<h2 id="&#20351;&#29992;-list()-&#20989;&#25976;&#21109;&#24314;-list">&#20351;&#29992; <code>list()</code> &#20989;&#25976;&#21109;&#24314; <code>list</code><a class="anchor-link" href="#&#20351;&#29992;-list()-&#20989;&#25976;&#21109;&#24314;-list">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span>
+  <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">,</span>
+  <span class="m">2019</span><span class="p">,</span>
+  <span class="m">8.4</span><span class="p">,</span>
+  <span class="nf">c</span><span class="p">(</span><span class="s">&quot;Action&quot;</span><span class="p">,</span> <span class="s">&quot;Adventure&quot;</span><span class="p">,</span> <span class="s">&quot;Sci-Fi&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">endgame</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'list'
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#27298;&#35222;&#22806;&#35264;">&#27298;&#35222;&#22806;&#35264;<a class="anchor-link" href="#&#27298;&#35222;&#22806;&#35264;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13261,13 +13296,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">an_integer</span> <span class="o">&lt;-</span> <span class="m">5</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">2</span> <span class="o">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s是奇數&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">2</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s是偶數&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span>
 </pre></div>
 
     </div>
@@ -13285,7 +13314,19 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea ">
-'5是奇數'
+<ol>
+	<li>'Avengers: Endgame'</li>
+	<li>2019</li>
+	<li>8.4</li>
+	<li><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Action'</li><li>'Adventure'</li><li>'Sci-Fi'</li></ol>
+</li>
+</ol>
+
 </div>
 
 </div>
@@ -13294,18 +13335,22 @@ a.anchor-link {
 </div>
 
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20351;&#29992;-[[INDEX]]-&#32034;&#24341;-list">&#20351;&#29992; <code>[[INDEX]]</code> &#32034;&#24341; <code>list</code><a class="anchor-link" href="#&#20351;&#29992;-[[INDEX]]-&#32034;&#24341;-list">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">an_integer</span> <span class="o">&lt;-</span> <span class="m">0</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">2</span> <span class="o">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s是奇數&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">2</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s是偶數&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="m">1</span><span class="p">]]</span>
+<span class="n">endgame</span><span class="p">[[</span><span class="m">2</span><span class="p">]]</span>
+<span class="n">endgame</span><span class="p">[[</span><span class="m">3</span><span class="p">]]</span>
+<span class="n">endgame</span><span class="p">[[</span><span class="m">4</span><span class="p">]]</span>
 </pre></div>
 
     </div>
@@ -13323,7 +13368,49 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea ">
-'0是偶數'
+'Avengers: Endgame'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2019
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+8.4
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Action'</li><li>'Adventure'</li><li>'Sci-Fi'</li></ol>
+
 </div>
 
 </div>
@@ -13335,32 +13422,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="if-else-&#20570;&#20841;&#20491;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;"><code>if else</code> &#20570;&#20841;&#20491;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;<a class="anchor-link" href="#if-else-&#20570;&#20841;&#20491;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;">&#182;</a></h2><ul>
-<li><code>if</code>, <code>else</code> 保留字</li>
-<li><code>EXPR</code> 是一段能產生邏輯值向量的敘述</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="c1"># 2 branches</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">EXPR</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1"># do something when EXPR is evaluated as TRUE</span>
-<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
-  <span class="c1"># do something when EXPR is evaluated as FALSE</span>
-<span class="p">}</span>
-</pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22914;&#26524;&#19968;&#20491;&#25972;&#25976;&#38500;&#20197;-2-&#30340;&#39192;&#25976;&#28858;-1-&#23601;&#26159;&#22855;&#25976;&#65292;&#21542;&#21063;&#26159;&#20598;&#25976;">&#22914;&#26524;&#19968;&#20491;&#25972;&#25976;&#38500;&#20197; 2 &#30340;&#39192;&#25976;&#28858; 1 &#23601;&#26159;&#22855;&#25976;&#65292;&#21542;&#21063;&#26159;&#20598;&#25976;<a class="anchor-link" href="#&#22914;&#26524;&#19968;&#20491;&#25972;&#25976;&#38500;&#20197;-2-&#30340;&#39192;&#25976;&#28858;-1-&#23601;&#26159;&#22855;&#25976;&#65292;&#21542;&#21063;&#26159;&#20598;&#25976;">&#182;</a></h2>
+<h2 id="list-&#26159;&#21487;&#36845;&#20195;&#30340;"><code>list</code> &#26159;&#21487;&#36845;&#20195;&#30340;<a class="anchor-link" href="#list-&#26159;&#21487;&#36845;&#20195;&#30340;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13369,11 +13431,8 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">an_integer</span> <span class="o">&lt;-</span> <span class="m">5</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">2</span> <span class="o">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s是奇數&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s是偶數&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="n">endgame</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -13390,28 +13449,39 @@ a.anchor-link {
     <div class="prompt"></div>
 
 
-
-<div class="output_html rendered_html output_subarea ">
-'5是奇數'
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Avengers: Endgame&#34;
+[1] 2019
+[1] 8.4
+[1] &#34;Action&#34;    &#34;Adventure&#34; &#34;Sci-Fi&#34;   
+</pre>
 </div>
-
 </div>
 
 </div>
 </div>
 
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21629;&#21517;&#30340;-list&#65288;named-list&#65289;">&#21629;&#21517;&#30340; <code>list</code>&#65288;named list&#65289;<a class="anchor-link" href="#&#21629;&#21517;&#30340;-list&#65288;named-list&#65289;">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">an_integer</span> <span class="o">&lt;-</span> <span class="m">0</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">2</span> <span class="o">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s是奇數&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s是偶數&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span>
+  <span class="n">movieTitle</span> <span class="o">=</span> <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">,</span>
+  <span class="n">releaseYear</span> <span class="o">=</span> <span class="m">2019</span><span class="p">,</span>
+  <span class="n">rating</span> <span class="o">=</span> <span class="m">8.4</span><span class="p">,</span>
+  <span class="n">genre</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;Action&quot;</span><span class="p">,</span> <span class="s">&quot;Adventure&quot;</span><span class="p">,</span> <span class="s">&quot;Sci-Fi&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">endgame</span><span class="p">)</span>
+<span class="n">endgame</span>
 </pre></div>
 
     </div>
@@ -13429,7 +13499,35 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea ">
-'0是偶數'
+'list'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl>
+	<dt>$movieTitle</dt>
+		<dd>'Avengers: Endgame'</dd>
+	<dt>$releaseYear</dt>
+		<dd>2019</dd>
+	<dt>$rating</dt>
+		<dd>8.4</dd>
+	<dt>$genre</dt>
+		<dd><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Action'</li><li>'Adventure'</li><li>'Sci-Fi'</li></ol>
+</dd>
+</dl>
+
 </div>
 
 </div>
@@ -13441,34 +13539,91 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="if-else-if-else-&#20570;&#19977;&#20491;&#20197;&#19978;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;"><code>if-else if-else</code> &#20570;&#19977;&#20491;&#20197;&#19978;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;<a class="anchor-link" href="#if-else-if-else-&#20570;&#19977;&#20491;&#20197;&#19978;&#31243;&#24335;&#20998;&#25903;&#30340;&#21312;&#22602;">&#182;</a></h2><ul>
-<li><code>if</code>, <code>else if</code>, <code>else</code> 保留字</li>
-<li><code>EXPR_1</code>、<code>EXPR_2</code> 皆是能產生邏輯值向量的敘述</li>
-</ul>
-
+<h2 id="&#20351;&#29992;-[[&quot;KEY&quot;]]-&#20358;&#32034;&#24341;-list">&#20351;&#29992; [["KEY"]] &#20358;&#32034;&#24341; <code>list</code><a class="anchor-link" href="#&#20351;&#29992;-[[&quot;KEY&quot;]]-&#20358;&#32034;&#24341;-list">&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="c1"># 3 branches</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">EXPR_1</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1"># do something when EXPR_1 is evaluated as TRUE</span>
-<span class="p">}</span> <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">EXPR_2</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1"># do something when EXPR_2 is evaluated as TRUE</span>
-<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
-  <span class="c1"># do something when EXPR_1 &amp; EXPR_2 is evaluated as FALSE</span>
-<span class="p">}</span>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;movieTitle&quot;</span><span class="p">]]</span>
+<span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;releaseYear&quot;</span><span class="p">]]</span>
+<span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;rating&quot;</span><span class="p">]]</span>
+<span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;genre&quot;</span><span class="p">]]</span>
 </pre></div>
 
+    </div>
 </div>
 </div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'Avengers: Endgame'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2019
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+8.4
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Action'</li><li>'Adventure'</li><li>'Sci-Fi'</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#19968;&#20491;&#25972;&#25976;&#38500;&#20197;-3-&#30340;&#39192;&#25976;&#21487;&#33021;&#28858;-0&#12289;1-&#25110;-2">&#19968;&#20491;&#25972;&#25976;&#38500;&#20197; 3 &#30340;&#39192;&#25976;&#21487;&#33021;&#28858; 0&#12289;1 &#25110; 2<a class="anchor-link" href="#&#19968;&#20491;&#25972;&#25976;&#38500;&#20197;-3-&#30340;&#39192;&#25976;&#21487;&#33021;&#28858;-0&#12289;1-&#25110;-2">&#182;</a></h2>
+<h2 id="&#20134;&#21487;&#20197;&#20351;&#29992;-$KEY-&#20358;&#32034;&#24341;-list">&#20134;&#21487;&#20197;&#20351;&#29992; <code>$KEY</code> &#20358;&#32034;&#24341; <code>list</code><a class="anchor-link" href="#&#20134;&#21487;&#20197;&#20351;&#29992;-$KEY-&#20358;&#32034;&#24341;-list">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13477,14 +13632,10 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">an_integer</span> <span class="o">&lt;-</span> <span class="m">3</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">3</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為0&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span> <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">3</span> <span class="o">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為1&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為2&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="o">$</span><span class="n">movieTitle</span>
+<span class="n">endgame</span><span class="o">$</span><span class="n">releaseYear</span>
+<span class="n">endgame</span><span class="o">$</span><span class="n">rating</span>
+<span class="n">endgame</span><span class="o">$</span><span class="n">genre</span>
 </pre></div>
 
     </div>
@@ -13502,7 +13653,49 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea ">
-'3除以3的餘數為0'
+'Avengers: Endgame'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+2019
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+8.4
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Action'</li><li>'Adventure'</li><li>'Sci-Fi'</li></ol>
+
 </div>
 
 </div>
@@ -13511,19 +13704,19 @@ a.anchor-link {
 </div>
 
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#29554;&#21462;-list-&#20013;&#30340;-KEYS">&#29554;&#21462; <code>list</code> &#20013;&#30340; <code>KEYS</code><a class="anchor-link" href="#&#29554;&#21462;-list-&#20013;&#30340;-KEYS">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">an_integer</span> <span class="o">&lt;-</span> <span class="m">4</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">3</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為0&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span> <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">3</span> <span class="o">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為1&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為2&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">names</span><span class="p">(</span><span class="n">endgame</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13541,7 +13734,13 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea ">
-'4除以3的餘數為1'
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'movieTitle'</li><li>'releaseYear'</li><li>'rating'</li><li>'genre'</li></ol>
+
 </div>
 
 </div>
@@ -13550,19 +13749,63 @@ a.anchor-link {
 </div>
 
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="list-&#20013;&#30340;&#27599;&#20491;&#21521;&#37327;&#37117;&#32173;&#25345;&#26412;&#20358;&#30340;-class"><code>list</code> &#20013;&#30340;&#27599;&#20491;&#21521;&#37327;&#37117;&#32173;&#25345;&#26412;&#20358;&#30340; class<a class="anchor-link" href="#list-&#20013;&#30340;&#27599;&#20491;&#21521;&#37327;&#37117;&#32173;&#25345;&#26412;&#20358;&#30340;-class">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">an_integer</span> <span class="o">&lt;-</span> <span class="m">5</span>
-<span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">3</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為0&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span> <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">an_integer</span> <span class="o">%%</span> <span class="m">3</span> <span class="o">==</span> <span class="m">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為1&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
-<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
-    <span class="nf">sprintf</span><span class="p">(</span><span class="s">&quot;%s除以3的餘數為2&quot;</span><span class="p">,</span> <span class="n">an_integer</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="n">endgame</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">print</span><span class="p">(</span><span class="nf">class</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;character&#34;
+[1] &#34;numeric&#34;
+[1] &#34;numeric&#34;
+[1] &#34;character&#34;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21152;&#20837;-list-&#20013;-KEY-VALUE">&#21152;&#20837; <code>list</code> &#20013; <code>KEY-VALUE</code><a class="anchor-link" href="#&#21152;&#20837;-list-&#20013;-KEY-VALUE">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;movieTime&quot;</span><span class="p">]]</span> <span class="o">&lt;-</span> <span class="m">181</span>
+<span class="n">endgame</span>
 </pre></div>
 
     </div>
@@ -13580,7 +13823,1027 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea ">
-'5除以3的餘數為2'
+<dl>
+	<dt>$movieTitle</dt>
+		<dd>'Avengers: Endgame'</dd>
+	<dt>$releaseYear</dt>
+		<dd>2019</dd>
+	<dt>$rating</dt>
+		<dd>8.4</dd>
+	<dt>$genre</dt>
+		<dd><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Action'</li><li>'Adventure'</li><li>'Sci-Fi'</li></ol>
+</dd>
+	<dt>$movieTime</dt>
+		<dd>181</dd>
+</dl>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#26356;&#26032;-list-&#20013;-VALUE">&#26356;&#26032; <code>list</code> &#20013; <code>VALUE</code><a class="anchor-link" href="#&#26356;&#26032;-list-&#20013;-VALUE">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;movieTime&quot;</span><span class="p">]]</span> <span class="o">&lt;-</span> <span class="s">&quot;3h 1min&quot;</span>
+<span class="n">endgame</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl>
+	<dt>$movieTitle</dt>
+		<dd>'Avengers: Endgame'</dd>
+	<dt>$releaseYear</dt>
+		<dd>2019</dd>
+	<dt>$rating</dt>
+		<dd>8.4</dd>
+	<dt>$genre</dt>
+		<dd><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Action'</li><li>'Adventure'</li><li>'Sci-Fi'</li></ol>
+</dd>
+	<dt>$movieTime</dt>
+		<dd>'3h 1min'</dd>
+</dl>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21034;&#38500;-list-&#20013;-KEY-VALUE">&#21034;&#38500; <code>list</code> &#20013; <code>KEY-VALUE</code><a class="anchor-link" href="#&#21034;&#38500;-list-&#20013;-KEY-VALUE">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;movieTime&quot;</span><span class="p">]]</span> <span class="o">&lt;-</span> <span class="kc">NULL</span>
+<span class="n">endgame</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<dl>
+	<dt>$movieTitle</dt>
+		<dd>'Avengers: Endgame'</dd>
+	<dt>$releaseYear</dt>
+		<dd>2019</dd>
+	<dt>$rating</dt>
+		<dd>8.4</dd>
+	<dt>$genre</dt>
+		<dd><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Action'</li><li>'Adventure'</li><li>'Sci-Fi'</li></ol>
+</dd>
+</dl>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="factor"><code>factor</code><a class="anchor-link" href="#factor">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="factor-&#22312;-R-&#20013;&#30340;&#23450;&#20301;"><code>factor</code> &#22312; R &#20013;&#30340;&#23450;&#20301;<a class="anchor-link" href="#factor-&#22312;-R-&#20013;&#30340;&#23450;&#20301;">&#182;</a></h2><ul>
+<li>特殊的文字向量</li>
+<li>獨一的文字值會以 <strong>Levels</strong> 紀錄</li>
+<li>每個獨一的文字值會以一個整數編碼，支援有序文字</li>
+<li>預設的文字變數類型</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20351;&#29992;-factor()-&#20989;&#25976;&#21109;&#24314;">&#20351;&#29992; <code>factor()</code> &#20989;&#25976;&#21109;&#24314;<a class="anchor-link" href="#&#20351;&#29992;-factor()-&#20989;&#25976;&#21109;&#24314;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;The Avengers&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Infinity War&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">)</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">avengers</span><span class="p">)</span>
+<span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="n">avengers</span><span class="p">)</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">avengers</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'character'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'factor'
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#29544;&#19968;&#30340;&#25991;&#23383;&#20540;&#20197;-Levels-&#32232;&#30908;">&#29544;&#19968;&#30340;&#25991;&#23383;&#20540;&#20197; Levels &#32232;&#30908;<a class="anchor-link" href="#&#29544;&#19968;&#30340;&#25991;&#23383;&#20540;&#20197;-Levels-&#32232;&#30908;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">rgbs</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;green&quot;</span><span class="p">,</span> <span class="s">&quot;blue&quot;</span><span class="p">,</span> <span class="s">&quot;blue&quot;</span><span class="p">,</span> <span class="s">&quot;green&quot;</span><span class="p">,</span> <span class="s">&quot;green&quot;</span><span class="p">))</span>
+<span class="n">rgbs</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>red</li><li>green</li><li>blue</li><li>blue</li><li>green</li><li>green</li></ol>
+
+<details>
+	<summary style=display:list-item;cursor:pointer>
+		<strong>Levels</strong>:
+	</summary>
+	<style>
+	.list-inline {list-style: none; margin:0; padding: 0}
+	.list-inline>li {display: inline-block}
+	.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+	</style>
+	<ol class=list-inline><li>'blue'</li><li>'green'</li><li>'red'</li></ol>
+</details>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="factor-&#25903;&#25588;&#26377;&#24207;&#25991;&#23383;"><code>factor</code> &#25903;&#25588;&#26377;&#24207;&#25991;&#23383;<a class="anchor-link" href="#factor-&#25903;&#25588;&#26377;&#24207;&#25991;&#23383;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">temperatures</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;freezing&quot;</span><span class="p">,</span> <span class="s">&quot;cold&quot;</span><span class="p">,</span> <span class="s">&quot;cool&quot;</span><span class="p">,</span> <span class="s">&quot;warm&quot;</span><span class="p">,</span> <span class="s">&quot;hot&quot;</span><span class="p">),</span> <span class="n">ordered</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+<span class="n">temperatures</span>
+<span class="n">temperatures</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">temperatures</span><span class="p">[</span><span class="m">3</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>freezing</li><li>cold</li><li>cool</li><li>warm</li><li>hot</li></ol>
+
+<details>
+	<summary style=display:list-item;cursor:pointer>
+		<strong>Levels</strong>:
+	</summary>
+	<style>
+	.list-inline {list-style: none; margin:0; padding: 0}
+	.list-inline>li {display: inline-block}
+	.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+	</style>
+	<ol class=list-inline><li>'cold'</li><li>'cool'</li><li>'freezing'</li><li>'hot'</li><li>'warm'</li></ol>
+</details>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+TRUE
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#35519;&#25972;-factor-&#30340;&#38918;&#24207;">&#35519;&#25972; <code>factor</code> &#30340;&#38918;&#24207;<a class="anchor-link" href="#&#35519;&#25972;-factor-&#30340;&#38918;&#24207;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">temperatures</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;freezing&quot;</span><span class="p">,</span> <span class="s">&quot;cold&quot;</span><span class="p">,</span> <span class="s">&quot;cool&quot;</span><span class="p">,</span> <span class="s">&quot;warm&quot;</span><span class="p">,</span> <span class="s">&quot;hot&quot;</span><span class="p">),</span>
+                       <span class="n">ordered</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                       <span class="n">levels</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;freezing&quot;</span><span class="p">,</span> <span class="s">&quot;cold&quot;</span><span class="p">,</span> <span class="s">&quot;cool&quot;</span><span class="p">,</span> <span class="s">&quot;warm&quot;</span><span class="p">,</span> <span class="s">&quot;hot&quot;</span><span class="p">))</span>
+<span class="n">temperatures</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>freezing</li><li>cold</li><li>cool</li><li>warm</li><li>hot</li></ol>
+
+<details>
+	<summary style=display:list-item;cursor:pointer>
+		<strong>Levels</strong>:
+	</summary>
+	<style>
+	.list-inline {list-style: none; margin:0; padding: 0}
+	.list-inline>li {display: inline-block}
+	.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+	</style>
+	<ol class=list-inline><li>'freezing'</li><li>'cold'</li><li>'cool'</li><li>'warm'</li><li>'hot'</li></ol>
+</details>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#27599;&#20491;&#29544;&#19968;&#30340;&#25991;&#23383;&#20540;&#26371;&#20197;&#19968;&#20491;&#25972;&#25976;&#32232;&#30908;">&#27599;&#20491;&#29544;&#19968;&#30340;&#25991;&#23383;&#20540;&#26371;&#20197;&#19968;&#20491;&#25972;&#25976;&#32232;&#30908;<a class="anchor-link" href="#&#27599;&#20491;&#29544;&#19968;&#30340;&#25991;&#23383;&#20540;&#26371;&#20197;&#19968;&#20491;&#25972;&#25976;&#32232;&#30908;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">temperatures</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;freezing&quot;</span><span class="p">,</span> <span class="s">&quot;cold&quot;</span><span class="p">,</span> <span class="s">&quot;cool&quot;</span><span class="p">,</span> <span class="s">&quot;warm&quot;</span><span class="p">,</span> <span class="s">&quot;hot&quot;</span><span class="p">)</span>
+<span class="nf">as.numeric</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span> <span class="c1"># Warning</span>
+<span class="n">temperatures</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;freezing&quot;</span><span class="p">,</span> <span class="s">&quot;cold&quot;</span><span class="p">,</span> <span class="s">&quot;cool&quot;</span><span class="p">,</span> <span class="s">&quot;warm&quot;</span><span class="p">,</span> <span class="s">&quot;hot&quot;</span><span class="p">))</span>
+<span class="nf">as.numeric</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Warning message in eval(expr, envir, enclos):
+“NAs introduced by coercion”
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>&lt;NA&gt;</li><li>&lt;NA&gt;</li><li>&lt;NA&gt;</li><li>&lt;NA&gt;</li><li>&lt;NA&gt;</li></ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>3</li><li>1</li><li>2</li><li>5</li><li>4</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="factor-&#26377;&#26178;&#38627;&#20197;&#25484;&#25511;"><code>factor</code> &#26377;&#26178;&#38627;&#20197;&#25484;&#25511;<a class="anchor-link" href="#factor-&#26377;&#26178;&#38627;&#20197;&#25484;&#25511;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;The Avengers&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Infinity War&quot;</span><span class="p">))</span>
+<span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="n">avengers</span><span class="p">,</span> <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">)</span>
+<span class="n">avengers</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'3'</li><li>'1'</li><li>'2'</li><li>'Avengers: Endgame'</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="R-&#20351;&#29992;&#32773;&#28858;&#20309;&#26371;&#38656;&#35201;&#20351;&#29992;-factor-&#20786;&#23384;&#25991;&#23383;">R &#20351;&#29992;&#32773;&#28858;&#20309;&#26371;&#38656;&#35201;&#20351;&#29992; <code>factor</code> &#20786;&#23384;&#25991;&#23383;<a class="anchor-link" href="#R-&#20351;&#29992;&#32773;&#28858;&#20309;&#26371;&#38656;&#35201;&#20351;&#29992;-factor-&#20786;&#23384;&#25991;&#23383;">&#182;</a></h2><ul>
+<li><code>factor</code> 具有整數的編碼</li>
+<li>讓資料成為 <code>modeling-ready</code> 的狀態</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="data.frame"><code>data.frame</code><a class="anchor-link" href="#data.frame">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="data.frame-&#22312;-R-&#20013;&#30340;&#23450;&#20301;"><code>data.frame</code> &#22312; R &#20013;&#30340;&#23450;&#20301;<a class="anchor-link" href="#data.frame-&#22312;-R-&#20013;&#30340;&#23450;&#20301;">&#182;</a></h2><ul>
+<li>處理表格資料的首選</li>
+<li>多數資料科學家處理的資料是表格形式</li>
+<li>具有兩個維度，<code>m x n</code>（列 x 欄）</li>
+<li>列常被稱為觀測值、欄常被稱為變數</li>
+<li>每個欄都是一個向量，具有個別的 class</li>
+<li>支援 <code>$</code> 作為取出單一欄的索引方式</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20351;&#29992;-data.frame()-&#20989;&#25976;&#21109;&#24314;&#36039;&#26009;&#26694;">&#20351;&#29992; <code>data.frame()</code> &#20989;&#25976;&#21109;&#24314;&#36039;&#26009;&#26694;<a class="anchor-link" href="#&#20351;&#29992;-data.frame()-&#20989;&#25976;&#21109;&#24314;&#36039;&#26009;&#26694;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;The Avengers&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Infinity War&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">)</span>
+<span class="n">ratings</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">8.0</span><span class="p">,</span> <span class="m">7.3</span><span class="p">,</span> <span class="m">8.4</span><span class="p">,</span> <span class="m">8.4</span><span class="p">)</span>
+<span class="n">release_year</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">2012</span><span class="p">,</span> <span class="m">2015</span><span class="p">,</span> <span class="m">2018</span><span class="p">,</span> <span class="m">2019</span><span class="p">)</span>
+<span class="n">is_good</span> <span class="o">&lt;-</span> <span class="n">ratings</span> <span class="o">&gt;=</span> <span class="m">8</span>
+<span class="n">avengers_df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="n">avengers</span><span class="p">,</span> <span class="n">rating</span> <span class="o">=</span> <span class="n">ratings</span><span class="p">,</span> <span class="n">release_year</span><span class="p">,</span> <span class="n">is_good</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<caption>A data.frame: 4 × 4</caption>
+<thead>
+	<tr><th scope=col>title</th><th scope=col>rating</th><th scope=col>release_year</th><th scope=col>is_good</th></tr>
+	<tr><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;lgl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><td>The Avengers           </td><td>8.0</td><td>2012</td><td> TRUE</td></tr>
+	<tr><td>Avengers: Age of Ultron</td><td>7.3</td><td>2015</td><td>FALSE</td></tr>
+	<tr><td>Avengers: Infinity War </td><td>8.4</td><td>2018</td><td> TRUE</td></tr>
+	<tr><td>Avengers: Endgame      </td><td>8.4</td><td>2019</td><td> TRUE</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#22312;-R-4.0-&#20043;&#21069;&#30340;&#29256;&#26412;&#65292;&#25991;&#23383;&#21521;&#37327;&#38928;&#35373;&#20197;-factor-&#22411;&#24907;&#20786;&#23384;">&#22312; R 4.0 &#20043;&#21069;&#30340;&#29256;&#26412;&#65292;&#25991;&#23383;&#21521;&#37327;&#38928;&#35373;&#20197; <code>factor</code> &#22411;&#24907;&#20786;&#23384;<a class="anchor-link" href="#&#22312;-R-4.0-&#20043;&#21069;&#30340;&#29256;&#26412;&#65292;&#25991;&#23383;&#21521;&#37327;&#38928;&#35373;&#20197;-factor-&#22411;&#24907;&#20786;&#23384;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="c1">#?str</span>
+<span class="nf">str</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&#39;data.frame&#39;:	4 obs. of  4 variables:
+ $ title       : chr  &#34;The Avengers&#34; &#34;Avengers: Age of Ultron&#34; &#34;Avengers: Infinity War&#34; &#34;Avengers: Endgame&#34;
+ $ rating      : num  8 7.3 8.4 8.4
+ $ release_year: num  2012 2015 2018 2019
+ $ is_good     : logi  TRUE FALSE TRUE TRUE
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21152;&#20837;&#21443;&#25976;-stringsAsFactors-=-FALSE-&#21487;&#20197;&#35519;&#25972;&#28858;&#25991;&#23383;&#21521;&#37327;">&#21152;&#20837;&#21443;&#25976; <code>stringsAsFactors = FALSE</code> &#21487;&#20197;&#35519;&#25972;&#28858;&#25991;&#23383;&#21521;&#37327;<a class="anchor-link" href="#&#21152;&#20837;&#21443;&#25976;-stringsAsFactors-=-FALSE-&#21487;&#20197;&#35519;&#25972;&#28858;&#25991;&#23383;&#21521;&#37327;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="n">avengers</span><span class="p">,</span> <span class="n">rating</span> <span class="o">=</span> <span class="n">ratings</span><span class="p">,</span> <span class="n">release_year</span><span class="p">,</span> <span class="n">is_good</span><span class="p">,</span> <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+<span class="nf">str</span><span class="p">(</span><span class="n">avengers_df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&#39;data.frame&#39;:	4 obs. of  4 variables:
+ $ title       : chr  &#34;The Avengers&#34; &#34;Avengers: Age of Ultron&#34; &#34;Avengers: Infinity War&#34; &#34;Avengers: Endgame&#34;
+ $ rating      : num  8 7.3 8.4 8.4
+ $ release_year: num  2012 2015 2018 2019
+ $ is_good     : logi  TRUE FALSE TRUE TRUE
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#24120;&#35211;&#29992;&#20358;&#35264;&#23519;-data.frame-&#30340;&#20989;&#25976;">&#24120;&#35211;&#29992;&#20358;&#35264;&#23519; <code>data.frame</code> &#30340;&#20989;&#25976;<a class="anchor-link" href="#&#24120;&#35211;&#29992;&#20358;&#35264;&#23519;-data.frame-&#30340;&#20989;&#25976;">&#182;</a></h2><ul>
+<li><code>View()</code>：顯示漂亮的資料框外觀</li>
+<li><code>head(n)</code>：顯示前 n 列</li>
+<li><code>tail(n)</code>：顯示後 n 列</li>
+<li><code>summary()</code>：顯示描述性統計</li>
+<li><code>str()</code>：顯示結構</li>
+<li><code>dim()</code>：顯示維度</li>
+<li><code>nrow()</code>：顯示列數</li>
+<li><code>ncol()</code>：顯示欄數</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#24478;&#36039;&#26009;&#26694;&#20013;&#36984;&#20986;&#27396;&#20301;&#25104;&#28858;&#19968;&#20491;&#21521;&#37327;">&#24478;&#36039;&#26009;&#26694;&#20013;&#36984;&#20986;&#27396;&#20301;&#25104;&#28858;&#19968;&#20491;&#21521;&#37327;<a class="anchor-link" href="#&#24478;&#36039;&#26009;&#26694;&#20013;&#36984;&#20986;&#27396;&#20301;&#25104;&#28858;&#19968;&#20491;&#21521;&#37327;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="p">[[</span><span class="s">&quot;title&quot;</span><span class="p">]]</span>
+<span class="n">avengers_df</span><span class="p">[,</span> <span class="s">&quot;title&quot;</span><span class="p">]</span>
+<span class="n">avengers_df</span><span class="p">[,</span> <span class="m">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'The Avengers'</li><li>'Avengers: Age of Ultron'</li><li>'Avengers: Infinity War'</li><li>'Avengers: Endgame'</li></ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'The Avengers'</li><li>'Avengers: Age of Ultron'</li><li>'Avengers: Infinity War'</li><li>'Avengers: Endgame'</li></ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'The Avengers'</li><li>'Avengers: Age of Ultron'</li><li>'Avengers: Infinity War'</li><li>'Avengers: Endgame'</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#25110;&#32773;&#20351;&#29992;-$">&#25110;&#32773;&#20351;&#29992; <code>$</code><a class="anchor-link" href="#&#25110;&#32773;&#20351;&#29992;-$">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="o">$</span><span class="n">title</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'The Avengers'</li><li>'Avengers: Age of Ultron'</li><li>'Avengers: Infinity War'</li><li>'Avengers: Endgame'</li></ol>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#31721;&#36984;&#35264;&#28204;&#20540;&#65306;&#25351;&#23450;&#21015;&#25976;">&#31721;&#36984;&#35264;&#28204;&#20540;&#65306;&#25351;&#23450;&#21015;&#25976;<a class="anchor-link" href="#&#31721;&#36984;&#35264;&#28204;&#20540;&#65306;&#25351;&#23450;&#21015;&#25976;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">),</span> <span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<caption>A data.frame: 3 × 4</caption>
+<thead>
+	<tr><th></th><th scope=col>title</th><th scope=col>rating</th><th scope=col>release_year</th><th scope=col>is_good</th></tr>
+	<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;lgl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>1</th><td>The Avengers          </td><td>8.0</td><td>2012</td><td>TRUE</td></tr>
+	<tr><th scope=row>3</th><td>Avengers: Infinity War</td><td>8.4</td><td>2018</td><td>TRUE</td></tr>
+	<tr><th scope=row>4</th><td>Avengers: Endgame     </td><td>8.4</td><td>2019</td><td>TRUE</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#31721;&#36984;&#35264;&#28204;&#20540;&#65306;&#20351;&#29992;&#37007;&#36655;&#20540;&#21521;&#37327;">&#31721;&#36984;&#35264;&#28204;&#20540;&#65306;&#20351;&#29992;&#37007;&#36655;&#20540;&#21521;&#37327;<a class="anchor-link" href="#&#31721;&#36984;&#35264;&#28204;&#20540;&#65306;&#20351;&#29992;&#37007;&#36655;&#20540;&#21521;&#37327;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="kc">FALSE</span><span class="p">,</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="kc">TRUE</span><span class="p">),</span> <span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<caption>A data.frame: 2 × 4</caption>
+<thead>
+	<tr><th></th><th scope=col>title</th><th scope=col>rating</th><th scope=col>release_year</th><th scope=col>is_good</th></tr>
+	<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;lgl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>3</th><td>Avengers: Infinity War</td><td>8.4</td><td>2018</td><td>TRUE</td></tr>
+	<tr><th scope=row>4</th><td>Avengers: Endgame     </td><td>8.4</td><td>2019</td><td>TRUE</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21033;&#29992;&#37007;&#36655;&#36939;&#31639;&#31526;&#29986;&#29983;&#37007;&#36655;&#20540;&#21521;&#37327;">&#21033;&#29992;&#37007;&#36655;&#36939;&#31639;&#31526;&#29986;&#29983;&#37007;&#36655;&#20540;&#21521;&#37327;<a class="anchor-link" href="#&#21033;&#29992;&#37007;&#36655;&#36939;&#31639;&#31526;&#29986;&#29983;&#37007;&#36655;&#20540;&#21521;&#37327;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="o">$</span><span class="n">release_year</span> <span class="o">&gt;=</span> <span class="m">2018</span>
+<span class="n">avengers_df</span><span class="p">[</span><span class="n">avengers_df</span><span class="o">$</span><span class="n">release_year</span> <span class="o">&gt;=</span> <span class="m">2018</span><span class="p">,</span> <span class="p">]</span> <span class="c1"># putting logical vector as row index</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>FALSE</li><li>FALSE</li><li>TRUE</li><li>TRUE</li></ol>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table>
+<caption>A data.frame: 2 × 4</caption>
+<thead>
+	<tr><th></th><th scope=col>title</th><th scope=col>rating</th><th scope=col>release_year</th><th scope=col>is_good</th></tr>
+	<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;lgl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>3</th><td>Avengers: Infinity War</td><td>8.4</td><td>2018</td><td>TRUE</td></tr>
+	<tr><th scope=row>4</th><td>Avengers: Endgame     </td><td>8.4</td><td>2019</td><td>TRUE</td></tr>
+</tbody>
+</table>
+
 </div>
 
 </div>
