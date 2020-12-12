@@ -1,2 +1,2 @@
-# chapter-conditional-statement-in-r
-Chapter: Conditional statements in R.
+# chapter-structuring-data-with-r
+Chapter: Structuring data with R.
