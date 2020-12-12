@@ -13422,56 +13422,13 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="list-&#26159;&#21487;&#36845;&#20195;&#30340;"><code>list</code> &#26159;&#21487;&#36845;&#20195;&#30340;<a class="anchor-link" href="#list-&#26159;&#21487;&#36845;&#20195;&#30340;">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="n">endgame</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] &#34;Avengers: Endgame&#34;
-[1] 2019
-[1] 8.4
-[1] &#34;Action&#34;    &#34;Adventure&#34; &#34;Sci-Fi&#34;   
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#21629;&#21517;&#30340;-list&#65288;named-list&#65289;">&#21629;&#21517;&#30340; <code>list</code>&#65288;named list&#65289;<a class="anchor-link" href="#&#21629;&#21517;&#30340;-list&#65288;named-list&#65289;">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span>
@@ -13545,7 +13502,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;movieTitle&quot;</span><span class="p">]]</span>
@@ -13629,7 +13586,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="o">$</span><span class="n">movieTitle</span>
@@ -13713,7 +13670,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">names</span><span class="p">(</span><span class="n">endgame</span><span class="p">)</span>
@@ -13758,12 +13715,13 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="n">endgame</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nf">print</span><span class="p">(</span><span class="nf">class</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
-<span class="p">}</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">class</span><span class="p">(</span><span class="n">endgame</span><span class="o">$</span><span class="n">movieTitle</span><span class="p">)</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">endgame</span><span class="o">$</span><span class="n">releaseYear</span><span class="p">)</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">endgame</span><span class="o">$</span><span class="n">rating</span><span class="p">)</span>
+<span class="nf">class</span><span class="p">(</span><span class="n">endgame</span><span class="o">$</span><span class="n">genre</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13779,13 +13737,47 @@ a.anchor-link {
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[1] &#34;character&#34;
-[1] &#34;numeric&#34;
-[1] &#34;numeric&#34;
-[1] &#34;character&#34;
-</pre>
+
+<div class="output_html rendered_html output_subarea ">
+'character'
 </div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'numeric'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'numeric'
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+'character'
+</div>
+
 </div>
 
 </div>
@@ -13801,7 +13793,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;movieTime&quot;</span><span class="p">]]</span> <span class="o">&lt;-</span> <span class="m">181</span>
@@ -13859,7 +13851,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;movieTime&quot;</span><span class="p">]]</span> <span class="o">&lt;-</span> <span class="s">&quot;3h 1min&quot;</span>
@@ -13917,7 +13909,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">endgame</span><span class="p">[[</span><span class="s">&quot;movieTime&quot;</span><span class="p">]]</span> <span class="o">&lt;-</span> <span class="kc">NULL</span>
@@ -13993,7 +13985,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;The Avengers&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Infinity War&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">)</span>
@@ -14047,7 +14039,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">rgbs</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;green&quot;</span><span class="p">,</span> <span class="s">&quot;blue&quot;</span><span class="p">,</span> <span class="s">&quot;blue&quot;</span><span class="p">,</span> <span class="s">&quot;green&quot;</span><span class="p">,</span> <span class="s">&quot;green&quot;</span><span class="p">))</span>
@@ -14104,7 +14096,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">temperatures</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;freezing&quot;</span><span class="p">,</span> <span class="s">&quot;cold&quot;</span><span class="p">,</span> <span class="s">&quot;cool&quot;</span><span class="p">,</span> <span class="s">&quot;warm&quot;</span><span class="p">,</span> <span class="s">&quot;hot&quot;</span><span class="p">),</span> <span class="n">ordered</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
@@ -14174,7 +14166,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">temperatures</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;freezing&quot;</span><span class="p">,</span> <span class="s">&quot;cold&quot;</span><span class="p">,</span> <span class="s">&quot;cool&quot;</span><span class="p">,</span> <span class="s">&quot;warm&quot;</span><span class="p">,</span> <span class="s">&quot;hot&quot;</span><span class="p">),</span>
@@ -14233,7 +14225,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">temperatures</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;freezing&quot;</span><span class="p">,</span> <span class="s">&quot;cold&quot;</span><span class="p">,</span> <span class="s">&quot;cool&quot;</span><span class="p">,</span> <span class="s">&quot;warm&quot;</span><span class="p">,</span> <span class="s">&quot;hot&quot;</span><span class="p">)</span>
@@ -14311,7 +14303,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;The Avengers&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Infinity War&quot;</span><span class="p">))</span>
@@ -14391,7 +14383,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;The Avengers&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Age of Ultron&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Infinity War&quot;</span><span class="p">,</span> <span class="s">&quot;Avengers: Endgame&quot;</span><span class="p">)</span>
@@ -14408,7 +14400,7 @@ TRUE
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span>
@@ -14460,7 +14452,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1">#?str</span>
@@ -14503,7 +14495,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="n">avengers</span><span class="p">,</span> <span class="n">rating</span> <span class="o">=</span> <span class="n">ratings</span><span class="p">,</span> <span class="n">release_year</span><span class="p">,</span> <span class="n">is_good</span><span class="p">,</span> <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
@@ -14563,7 +14555,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="p">[[</span><span class="s">&quot;title&quot;</span><span class="p">]]</span>
@@ -14646,7 +14638,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="o">$</span><span class="n">title</span>
@@ -14691,7 +14683,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">),</span> <span class="p">]</span>
@@ -14742,7 +14734,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="kc">FALSE</span><span class="p">,</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="kc">TRUE</span><span class="p">),</span> <span class="p">]</span>
@@ -14792,7 +14784,7 @@ TRUE
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">avengers_df</span><span class="o">$</span><span class="n">release_year</span> <span class="o">&gt;=</span> <span class="m">2018</span>
