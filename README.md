@@ -1,2 +1,2 @@
-# chapter-structuring-data-with-r
-Chapter: Structuring data with R.
+# chapter-iterating-data-with-r
+Chapter: Iterating data with R.
